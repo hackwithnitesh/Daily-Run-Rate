@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+
+
+        body{
+            background:linear-gradient( to bottom right, rgb(193, 193, 236),white);
+
+        }
+
+        h1{
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #takingdata{
+            box-shadow: 10px 10px;
+
+        }
+       #takingdata{
+            border: 2px solid black;
+            
+            margin: 50px;
+            padding: 50px;
+        }
+        .date1{
+            padding: 5px;
+            margin-left: 15px;
+        }
+
+        label{
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Calculating the Daily Run Rate</h1>
+    <div id="takingdata">
+    <form name="employee">
+        <label  class="form-label" >Lead Count</label>
+        <input type="number"  id="lead" name="start" class="form-control" aria-describedby="passwordHelpBlock">
+        <label  class="form-label">start-date</label>
+        <input type="date"  id="start-date" name="start" class="form-control" aria-describedby="passwordHelpBlock">
+        <label  class="form-label">end-date</label>
+        <input type="date" id="end-date"name="end-date"  class="form-control" aria-describedby="passwordHelpBlock"><br><br>
+        <button type="button"  class="btn btn-danger" id="entry">Danger</button>
+    </form>
+    </div>
+
+    <diV>
+        <table class="table table-striped table-hover" id="display">
+            <tr>
+                <th class="count">ID</th>
+                <th>Start date</th>
+                <th>end Date</th>
+                <th>Month</th>
+                <th>year</th>
+                <th>Date Excluded</th>
+                <th>Number of day</th>
+                <th>lead Count</th>
+                <th>Expected DRR</th>
+                <th>Last Update</th>
+            </tr>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </diV>
+    <script src="javacsript.js">
+    </script>
+</body>
+</html>
